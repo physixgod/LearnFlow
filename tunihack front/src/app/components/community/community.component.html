@@ -1,0 +1,66 @@
+<section class="section contact" data-section="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading text-center">
+            <h2>Just Ask Reddit</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="search-bar-container text-center">
+            <form id="searchForm" *ngIf="!isSearchClicked">
+              <div class="input-group mb-3" style="max-width: 600px; margin: 0 auto;">
+                <input
+                  type="text"
+                  [(ngModel)]="query"
+                  class="form-control form-control-lg"
+                  placeholder="Ask your question ..."
+                  aria-label="Search query"
+                  aria-describedby="customSearchButton"
+                  id="searchQuery"
+                  name="searchQuery"
+                />
+                <button
+                  type="button"
+                  class="custom-search-button btn-lg"
+                  id="searchButton"
+                  (click)="searchReddit()"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+      <div class="row mt-5" *ngIf="isLoading">
+        <div class="col-md-12 text-center">
+          <img src="assets/images/loadingIcon.gif" />
+        </div>
+      </div>
+    
+      <div class="row mt-5" *ngIf="!isLoading && errorMessage">
+        <div class="col-md-12 text-center">
+          <p class="text-danger">{{ errorMessage }}</p>
+        </div>
+      </div>
+    
+      <div class="row mt-5" *ngIf="!isLoading">
+        <div class="col-md-12">
+          <h3 class="post-title">{{ postTitle }}</h3>
+          <p *ngIf="!isLoading && postText !== ''" class="post-text">{{ postText }}</p>
+        </div>
+    
+        <div class="col-md-12">
+          <h4>Comments</h4>
+          <ul class="list-group">
+            <li class="list-group-item" *ngFor="let comment of comments">
+              <strong>{{ comment.username }}</strong>: {{ comment.body }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  

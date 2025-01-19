@@ -1,0 +1,37 @@
+<section class="section coming-soon" data-section="section3">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="quiz-content">
+              <div class="quiz-header text-center">
+                <h6 style="color: #ffffff;">Answer these questions to get personalized course recommendations</h6>
+              </div>
+              <div *ngIf="currentQuestionIndex < questions.length" class="quiz-body">
+                <h5>{{ questions[currentQuestionIndex].question }}</h5>
+                <div *ngFor="let option of questions[currentQuestionIndex].options" class="quiz-option">
+                  <button 
+                    class="btn quiz-btn w-100 my-2"
+                    (click)="nextQuestion(option)"
+                  >
+                    {{ option }}
+                  </button>
+                </div>
+              </div>
+              <div *ngIf="currentQuestionIndex >= questions.length" class="quiz-complete text-center">
+                <h5 style="color: #ffffff;font-size: 20px;">Thank you for completing the quiz!</h5>
+                <p style="color: #ffffff; font-size: 18px;"> We truly appreciate the time you've taken to share your thoughts and preferences with us. Based on your responses, our platform will analyze your individual learning style, areas of interest, and personal goals. This information allows us to recommend courses that are perfectly suited to your needs, ensuring a more engaging and effective learning experience.</p>
+                <button class="btn btn-primary see-courses-btn" style="background-color: #f5a425;
+                color: #fff;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                font-weight: 700;
+                padding: 12px 20px;
+                display: inline-block;
+                outline: none;" (click)="navigateToCourses()">See Courses</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>

@@ -1,0 +1,31 @@
+<section class="section courses" data-section="section4">
+    <div>
+        <div class="col-md-12">
+            <div class="section-heading">
+                <h2>Recommended Courses</h2>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div *ngFor="let course of recommendedCourses" class="item">
+                    <img [src]="imagecourses[generateRandomNumber()]" alt="Course Image">
+                    <div class="down-content">
+                        <h4>{{ course.name }}</h4>
+                        <p>{{ course.description }}</p>
+                        <p><strong>Difficulty:</strong> {{ course.difficulty }}</p>
+                        <p><strong>Duration :</strong> {{ course.duration }} Hours</p>
+
+                        <div class="author-image">
+                            <img [src]="authorimages[generateAnotherRandomNumber()]" alt="Author Image">
+                        </div>
+
+                        <div class="text-button-free">
+                            <a href="#">Enroll <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
