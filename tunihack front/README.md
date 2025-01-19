@@ -58,7 +58,7 @@ Contact Support:
 Click on "Contact" to get in touch with our support team for assistance or inquiries.
 click on "Community" to ask questions and get help  
 6. Demo
-URL VIDEO
+URL VIDEO: https://youtu.be/VHHhrb-4xJY?si=irs-hZ2yN59RVVkC
 7. Team Members
 Mostfa Jenhani : FrontEnd Developer
 Ahmed Chakroun : FrontEnd Developer
