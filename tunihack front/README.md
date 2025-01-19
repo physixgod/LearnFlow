@@ -1,27 +1,28 @@
 LearnFlow
 1. Project Overview
 Description:
-LearnFlow is an innovative learning platform that connects users with a wide range of courses to enhance their skills. It features a user-friendly interface, dynamic content presentation, and seamless enrollment functionality, enabling an engaging and efficient learning experience.
+LearnFlow is an innovative learning platform dedicated to informal learners, empowering individuals who may not have access to formal education to enhance their skills. It features a user-friendly interface, dynamic content presentation, and seamless enrollment functionality, enabling an engaging and efficient learning experience.
 
 Inspiration:
-LearnFlow was inspired by the need for a global platform offering accessible, curated educational resources. Open to everyone, we believe anyone can revolutionize the AI world and achieve growth, regardless of their skill level or background
+LearnFlow was inspired by the need for a global platform offering accessible, curated educational resources in an all-in-one app. Open to everyone, we believe anyone can revolutionize the AI world and achieve growth, regardless of their skill level or background
 
 2. Features
 Personalized Recommendations: Take a quiz to receive tailored course suggestions based on your interests and skills.
 Engaging Course Exploration: Browse through all available courses , complete with detailed descriptions, durations,  difficulty levels and choose the ones you want to enroll in .
-Support Made Easy: Reach out to our support team for assistance .
+Community : users can ask for help from experienced individuals, share their knowledge, and give back to the community, creating a supportive and collaborative learning environment for everyone.
 
 3. Technology Stack
 Frontend: Angular, Bootstrap 5
 Backend: NestJS
 Database: MongoDB
+Api : Reddit
 
 4. Installation and Usage
 Prerequisites:
 Node.js (v16 or later)
 Angular CLI (v15 or later)
 NestJS CLI
-MongoDB (running locally or via cloud service like MongoDB Atlas)
+MongoDB running via cloud service MongoDB Atlas
 
 Installation Steps:
 Clone the repository:
@@ -30,15 +31,15 @@ Navigate to the project directory:
 Install frontend dependencies:
 npm install  
 Install backend dependencies: 
-npm install  
+npm install
 Configure MongoDB:
 
-Set up a MongoDB database (local or cloud).
+Set up a MongoDB database
 Update the .env file in the backend with your database connection string.
 Start the backend:
-npm run start:dev  
+npm run start:dev
 Start the Angular frontend:
-ng serve  
+ng serve
 Access the application:
 
 Open your browser and navigate to http://localhost:4200.
@@ -55,6 +56,7 @@ Browse Courses:
 Click on "Courses" to view all the educational content and programs provided on our website.
 Contact Support:
 Click on "Contact" to get in touch with our support team for assistance or inquiries.
+click on "Community" to ask questions and get help  
 6. Demo
 URL VIDEO
 7. Team Members
